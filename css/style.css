@@ -1,0 +1,53 @@
+body {
+    background-color: #B9144F;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 840px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ticket-form {
+    display: flex;
+    text-align: center;
+    padding: 10px 130px;
+    color: #B9144F;
+}
+
+input, select {
+    border: 1px solid #B9144F;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+button {
+    font-weight: 700px;
+    border-radius: 5px;
+    color: #B9144F;
+    border-color: darkgray;
+}
+
+button:hover {
+    border-color: orange;
+}
+
+h1:last-of-type {
+    padding-top: 20px;
+}

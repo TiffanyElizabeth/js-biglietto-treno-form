@@ -33,7 +33,7 @@ const ticketTypeElm = document.getElementById("ticket-type");
 const carriageNumElm = document.getElementById("carriage-num");
 const cpNumElm = document.getElementById("CP-num");
 const ticketPriceElm = document.getElementById("ticket-price");
-
+const yourTicketElm = document.getElementById("your-ticket");
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min +1) ) + min;
@@ -71,4 +71,9 @@ getTicketPriceElm.addEventListener("submit", function (event) {
     cpNumElm.innerHTML = getRndInteger(10000, 99999)
     ticketPriceElm.innerHTML = ticketPrice + "€"
     
+    yourTicketElm.classList.remove("d-none")
+})
+
+btnResetElm.addEventListener("click", function() {
+    yourTicketElm.classList.add("d-none");
 })
