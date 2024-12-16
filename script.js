@@ -34,6 +34,11 @@ const carriageNumElm = document.getElementById("carriage-num");
 const cpNumElm = document.getElementById("CP-num");
 const ticketPriceElm = document.getElementById("ticket-price");
 
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min +1) ) + min;
+}
+
 // DOM EVENTS
 getTicketPriceElm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -42,16 +47,28 @@ getTicketPriceElm.addEventListener("submit", function (event) {
     const age = ageBracketElm.value;
     const pricePerKm = 0.21
     let ticketPrice;
+    let ticketType;
 
     if(age === "minor") {
         ticketPrice = km * 0.21 * 0.8;
+        ticketType = "Biglietto Youth";
     } else if(age === "senior") {
         ticketPrice = km * 0.21 * 0.6;
+        ticketType = "Biglietto Senior";
     } else if (age === "standard") {
         ticketPrice = km * 0.21;
+        ticketType = "Biglietto Standard";
     }
 
     ticketPrice = ticketPrice.toFixed(2)
 
     console.log(ticketPrice)
+
+    // print 
+    passengerNameElm.innerHTML = fullNameElm.value
+    ticketTypeElm.innerHTML = ticketType
+    carriageNumElm.innerHTML = getRndInteger(1, 14)
+    cpNumElm.innerHTML = getRndInteger(10000, 99999)
+    ticketPriceElm.innerHTML = ticketPrice + "€"
+    
 })
