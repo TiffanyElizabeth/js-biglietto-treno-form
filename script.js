@@ -19,3 +19,32 @@ Btn 1 - "Genera"        Btn 2 - "Annulla"
 
 /* MILESONTE 2 : IL TUO BIGLIETTO
 NOME PASSAGGERO [Nome Cognome]  -- OFFERTA [Biglietto Standard, Minorenne o Senior] ; CARROZZA [random # da 1 a 9] ; CODICE CP [random # da 10000 a 99999] ; COSTO BIGLIETTO [(standard = km * 0.21), (minorenne = km * 0.21 * 0.8), (senior = km * 0.21 * 0.6) ** max 2 decimal points]
+*/
+
+// DOM ELEMENTS
+const getTicketPriceElm = document.getElementById("get-ticket-price")
+const fullNameElm = document.getElementById("full-name")
+const journeyLengthElm = document.getElementById("journey-length")
+const ageBracketElm = document.getElementById("age-bracket")
+const btnSubmitElm = document.getElementById("submit")
+const btnResetElm = document.getElementById("reset")
+
+// DOM EVENTS
+getTicketPriceElm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const km = Number(journeyLengthElm.value);
+    const age = ageBracketElm.value;
+    const pricePerKm = 0.21
+    let ticketPrice;
+
+    if(age === "minor") {
+        ticketPrice = km * 0.21 * 0.8;
+    } else if(age === "senior") {
+        ticketPrice = km * 0.21 * 0.6;
+    } else if (age === "senior") {
+        ticketPrice = km * 0.21;
+    }
+
+    console.log(ticketPrice)
+})
