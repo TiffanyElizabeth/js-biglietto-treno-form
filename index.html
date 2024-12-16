@@ -40,29 +40,30 @@
     
     <h1>IL TUO BIGLIETTO</h1>
     <!-- form 2 - tuo biglietto -->
-     <div id="your-ticket" class="d-none">
-        <div id ="passenger-details">
-            <div id="passenger">
-                <h2>NOME PASSAGGERO</h2>
-                <div id="passenger-name"></div>
-            </div>
-            <div id="ticket-details">
-                <div id="offer">
-                    <h3>Offerta</h3>
-                    <div id="ticket-type"></div>
+     <div id="your-ticket" class="d-none container">
+        <div class="ticket-container">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div id="passenger-details" class="d-flex row passenger-details">
+                <div id="passenger" class="col-4 passenger">
+                    <h2>NOME PASSAGGERO</h2>
+                    <div id="passenger-name" class="passenger-name"></div>
                 </div>
-                <div id="carriage">
-                    <h3>Carrozza</h3>
-                    <div id="carriage-num"></div>
-                </div>
-                <div id="CP-code">
-                    <h3>Codice CP</h3>
-                    <div id="CP-num"></div>
-                </div>
-                <div id="final-price">
-                    <h3>Costo biglietto</h3>
-                    <div id="ticket-price"></div>
-                </div>
+                    <div id="offer" class="col-2">
+                        <h3>Offerta</h3>
+                        <div id="ticket-type"></div>
+                    </div>
+                    <div id="carriage" class="col-2">
+                        <h3>Carrozza</h3>
+                        <div id="carriage-num"></div>
+                    </div>
+                    <div id="CP-code" class="col-2">
+                        <h3>Codice CP</h3>
+                        <div id="CP-num"></div>
+                    </div>
+                    <div id="final-price" class="col-2">
+                        <h3>Costo biglietto</h3>
+                        <div id="ticket-price"></div>
+                    </div>
             </div>
         </div>
      </div>

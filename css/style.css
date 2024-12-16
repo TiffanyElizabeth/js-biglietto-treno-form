@@ -7,6 +7,7 @@ h1 {
     color: white;
     padding: 10px 0px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .container {
@@ -38,7 +39,7 @@ input, select {
 }
 
 button {
-    font-weight: 700px;
+    font-weight: bold;
     border-radius: 5px;
     color: #B9144F;
     border-color: darkgray;
@@ -50,4 +51,42 @@ button:hover {
 
 h1:last-of-type {
     padding-top: 20px;
+}
+
+.ticket-container {
+    max-width: 796px;
+    padding: 20px;
+}
+
+.passenger-details {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2:last-of-type {
+    padding-top: 20px;
+}
+
+.passenger {
+    padding-left: 20px;
+    background-color: #808080;
+}
+
+.passenger-name {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
