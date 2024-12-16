@@ -11,3 +11,11 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 Nota: Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone.
 Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra. 
 */
+
+/* MILESTONE 1 : CALCOLA IL PREZZO DEL TUO BIGLIETTO 
+Nome Cognome (form)     Km da percorre (form - #)   Fascia d'età (dropdown - minorenne, maggiorenne, senior)
+Btn 1 - "Genera"        Btn 2 - "Annulla"
+*/
+
+/* MILESONTE 2 : IL TUO BIGLIETTO
+NOME PASSAGGERO [Nome Cognome]  -- OFFERTA [Biglietto Standard, Minorenne o Senior] ; CARROZZA [random # da 1 a 9] ; CODICE CP [random # da 10000 a 99999] ; COSTO BIGLIETTO [(standard = km * 0.21), (minorenne = km * 0.21 * 0.8), (senior = km * 0.21 * 0.6) ** max 2 decimal points]
