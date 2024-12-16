@@ -51,13 +51,13 @@ getTicketPriceElm.addEventListener("submit", function (event) {
 
     if(age === "minor") {
         ticketPrice = km * 0.21 * 0.8;
-        ticketType = "Biglietto Youth";
+        ticketType = "Youth";
     } else if(age === "senior") {
         ticketPrice = km * 0.21 * 0.6;
-        ticketType = "Biglietto Senior";
+        ticketType = "Senior";
     } else if (age === "standard") {
         ticketPrice = km * 0.21;
-        ticketType = "Biglietto Standard";
+        ticketType = "Standard";
     }
 
     ticketPrice = ticketPrice.toFixed(2)
