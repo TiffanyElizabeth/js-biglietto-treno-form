@@ -22,12 +22,17 @@ NOME PASSAGGERO [Nome Cognome]  -- OFFERTA [Biglietto Standard, Minorenne o Seni
 */
 
 // DOM ELEMENTS
-const getTicketPriceElm = document.getElementById("get-ticket-price")
-const fullNameElm = document.getElementById("full-name")
-const journeyLengthElm = document.getElementById("journey-length")
-const ageBracketElm = document.getElementById("age-bracket")
-const btnSubmitElm = document.getElementById("submit")
-const btnResetElm = document.getElementById("reset")
+const getTicketPriceElm = document.getElementById("get-ticket-price");
+const fullNameElm = document.getElementById("full-name");
+const journeyLengthElm = document.getElementById("journey-length");
+const ageBracketElm = document.getElementById("age-bracket");
+const btnSubmitElm = document.getElementById("submit");
+const btnResetElm = document.getElementById("reset");
+const passengerNameElm = document.getElementById("passenger-name");
+const ticketTypeElm = document.getElementById("ticket-type");
+const carriageNumElm = document.getElementById("carriage-num");
+const cpNumElm = document.getElementById("CP-num");
+const ticketPriceElm = document.getElementById("ticket-price");
 
 // DOM EVENTS
 getTicketPriceElm.addEventListener("submit", function (event) {
@@ -45,6 +50,8 @@ getTicketPriceElm.addEventListener("submit", function (event) {
     } else if (age === "standard") {
         ticketPrice = km * 0.21;
     }
+
+    ticketPrice = ticketPrice.toFixed(2)
 
     console.log(ticketPrice)
 })
