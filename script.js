@@ -42,7 +42,7 @@ getTicketPriceElm.addEventListener("submit", function (event) {
         ticketPrice = km * 0.21 * 0.8;
     } else if(age === "senior") {
         ticketPrice = km * 0.21 * 0.6;
-    } else if (age === "senior") {
+    } else if (age === "standard") {
         ticketPrice = km * 0.21;
     }
 
